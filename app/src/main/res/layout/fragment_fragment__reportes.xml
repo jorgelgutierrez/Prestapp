@@ -1,0 +1,134 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".Fragment_Reportes">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código:"
+        android:id="@+id/idTextCodigo"
+        android:textColor="@color/colorAccent"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idNombre"
+        android:maxLength="9"
+        android:ems="9"
+        android:inputType="number"
+        android:hint="Codigo"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Equipo a reportar:"
+        android:id="@+id/idTextEquipo"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idSpEquipo"
+        android:spinnerMode="dropdown"
+        android:entries="@array/equipo"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion del Fallo:"
+        android:id="@+id/idTextFallo"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_vertical"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idFallo"
+        android:maxLength="150"
+        android:hint="Descripcion"
+        android:gravity="left"
+        android:inputType="textMultiLine"
+        android:layout_weight="2"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edificio:"
+                android:id="@+id/idTextEdificio"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idSpLettersAulas"
+                android:spinnerMode="dropdown"
+                android:entries="@array/letteraulas" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aula:"
+                android:id="@+id/idTextAula"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/idSpNumAulas"
+                android:spinnerMode="dropdown"
+                android:entries="@array/numaulas"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar Reporte"
+        android:id="@+id/idButtonReporte"
+        android:layout_weight="1"
+        style="@style/Widget.AppCompat.Button.Colored" />
+</LinearLayout>

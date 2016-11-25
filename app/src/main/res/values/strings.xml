@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Prestapp</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_inicio">Inicio</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_inicio">En esta Aplicacion, el Usuario podra consultar la disponibilidad de equipo en UCTA</string>
+</resources>

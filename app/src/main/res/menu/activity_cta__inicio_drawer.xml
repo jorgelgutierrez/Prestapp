@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cables"
+            android:icon="@mipmap/ic_cable"
+            android:title="Cables" />
+        <item
+            android:id="@+id/nav_proyectores"
+            android:icon="@mipmap/ic_projector"
+            android:title="Proyectores" />
+        <item
+            android:id="@+id/nav_controles"
+            android:icon="@mipmap/ic_control"
+            android:title="Controles" />
+    </group>
+
+    <item android:title="Instructivos">
+        <menu>
+            <item
+                android:id="@+id/nav_pantallas"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Pantallas 80 Pulgadas" />
+            <item
+                android:id="@+id/nav_proyectores_wifi"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Proyectores Wi-Fi"/>
+        </menu>
+    </item>
+
+    <item android:title="Reportes">
+        <menu>
+            <item
+                android:id="@+id/nav_reportes"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Realiza tu Reportes" />
+        </menu>
+    </item>
+
+</menu>
